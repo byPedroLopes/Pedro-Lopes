@@ -50,14 +50,6 @@ p, .explicação, .titulop {
   background-color: #29000c;
 }
 
-video {
-  pointer-events: none;  
-  autoplay 
-  muted 
-  loop 
-  playsinline 
-  preload="metadata"
-}
 
 /* ================================================= */
 /* HEADER */
