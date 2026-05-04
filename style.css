@@ -160,7 +160,7 @@ padding-bottom: 0rem;
 
 .logos img {
   width: 8rem;
-  height: fit-content;
+  height: auto;
   padding-left: 0.2rem; padding-right: 0.2rem;
   margin: 0.2rem;
 }
