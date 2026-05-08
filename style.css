@@ -129,7 +129,6 @@ footer {
 /* HOME */
 /* ================================================= */
 
-
 .eu {
   height: 17rem;
   display: flex;
@@ -145,6 +144,8 @@ footer {
   width: 23rem;
   border: 1px solid #000000;
 }
+
+
 
 
 
@@ -182,7 +183,7 @@ padding-bottom: 0rem;
 
 .logos img {
   width: 8rem;
-  height: auto;
+  height: fit-content;
   padding-left: 0.2rem; padding-right: 0.2rem;
   margin: 0.2rem;
 }
@@ -313,48 +314,6 @@ h1 a { color: #000000;}
   box-shadow: 0 0 15px #c8c8c829;
 }
 
-
-/* ================================================= */
-/* FOOTER */
-/* ================================================= */
-
-footer {
-  height: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #29000c;
-  padding: 0 1vw; 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color:#29000c;
-}
-
-.footerli {
-  display: flex;
-  text-decoration: none;
-  list-style: none;
-}
-
-.footerli li {
-  padding-left: 0.5rem;
-}
-
-.footerli img {
-  height: 1.2rem;
-}
-
-
-
-.Mailto {
-  color: #8b6fa7;
-}
-
-.Mailto:hover {
-  color: #af92cd;
-}
-
 /* ================================================= */
 /* RESPONSIVE */
 /* ================================================= */
@@ -379,10 +338,10 @@ footer {
 
 
 
-.imgcaixa2 { grid-template-columns: repeat(1, 1fr); }
-.imgcaixa3 { grid-template-columns: repeat(1, 1fr); }
+.imgcaixa2 { grid-template-columns: repeat(2, 1fr); }
+.imgcaixa3 { grid-template-columns: repeat(2, 1fr); }
 .imgcaixa4 { grid-template-columns: repeat(2, 1fr); }
-.imgcaixa5 { grid-template-columns: repeat(2, 1fr); gap: 1.5rem;  }
+.imgcaixa5 { grid-template-columns: repeat(3, 1fr); gap: 2rem;  }
 
 
 [class^="caixa"] {
@@ -404,9 +363,13 @@ footer {
   display: block;
 }
 
+ .logos img  {
+  width: 5rem;
+  height: auto;
+}
 
  .logos img  {
-  width: 3rem;
+  width: 5rem;
   height: auto;
 }
 
@@ -430,7 +393,7 @@ footer {
   }
 
   .eu {
-    height: 10rem;
+    height: 11rem;
     margin: 1rem 0 0 2rem;
   }
 
@@ -448,22 +411,5 @@ footer {
   font-size: 0.6rem;
   font-weight: 200;
 }
-footer {
-  height: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #29000c;
-  padding: 0 1vw; 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color:#29000c;
-}
 
-.footerli {
-  display: flex;
-  text-decoration: none;
-  list-style: none;
-}
 }
