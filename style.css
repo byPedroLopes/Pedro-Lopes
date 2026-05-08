@@ -2,19 +2,13 @@
 /* RESET */
 /* ================================================= */
 
-
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  padding-top: 3rem;
-}
-
-h1, a, h2, h3{
+h1, a, h2, h3 {
   font-family: "Space Mono", monospace;
 }
 
@@ -26,9 +20,7 @@ p, .explicação, .titulop {
   font-weight: 400;
   font-size: small;
   padding-top: 0.2rem;
-
-
-  
+  color: #000000;
 }
 
 .explicação {
@@ -36,23 +28,8 @@ p, .explicação, .titulop {
   font-weight: 200;
 }
 
-.titulop  {
-  color: #000000;
-}
-
-.fundo {height: calc(100vh - 6rem)}
-
-.home {
-  height: calc(100vh - 6rem);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #29000c;
-}
-
-
 .index {
-  background-image: url("imagens/Cadernos.jpg");
+  background-image: url("imagens/IMG_7975 (1) - Cópia - Cópia.PNG");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -78,8 +55,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color:#29000c;
-  z-index: 1000;
+  background-color: #29000c;
+  z-index: 1001; /* Garante que fica no topo */
 }
 
 .logo {
@@ -109,17 +86,49 @@ header {
   color: #af92cd;
 }
 
-.linkpro {
-  text-decoration: none;
-  color: #000000;
+/* ================================================= */
+/* FOOTER */
+/* ================================================= */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* FUNDAMENTAL para aparecer com position: fixed */
+  height: 3rem;
+  padding: 0 1vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #29000c;
+  z-index: 1001;
 }
 
-.linkpro a:hover {
-  color:blueviolet ;
+.footerli {
+  display: flex;
+  list-style: none;
+}
+
+.footerli li {
+  padding-left: 0.5rem;
+}
+
+.footerli img {
+  height: 1.2rem;
+}
+
+.Mailto {
+  text-decoration: none;
+  color: #8b6fa7;
+}
+
+.Mailto:hover {
+  color: #af92cd;
 }
 /* ================================================= */
 /* HOME */
 /* ================================================= */
+
 
 .eu {
   height: 17rem;
