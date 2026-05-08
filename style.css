@@ -29,13 +29,14 @@ p, .explicação, .titulop {
 }
 
 .index {
-  background-image: url("imagens/IMG_7975 (1) - Cópia - Cópia.PNG");
+  background-image: url("imagens/Cadernos.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
   height: 100vh; 
   margin: 0;
+  /* Removi o overflow:hidden para não cortar o footer */
   display: flex;
   flex-direction: column;
 }
@@ -46,6 +47,8 @@ p, .explicação, .titulop {
 
 header {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 3rem;
   padding: 0 1vw;
@@ -53,7 +56,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #29000c;
-  z-index: 1001;
+  z-index: 1001; /* Garante que fica no topo */
 }
 
 .logo {
@@ -98,7 +101,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   background-color: #29000c;
-  z-index: 1000;
+  z-index: 1001;
 }
 
 .footerli {
