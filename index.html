@@ -16,7 +16,7 @@
 <title>Pedro Lopes</title>
 </head>
 
-<body class="fundo">
+<body class="index">
 
 <header>
 <div><a href="index.html"><img src="imagens/logo.png" class="logo"></a></div>
@@ -31,14 +31,8 @@
 </nav>
 </header>
 
-<main class="home">
-  <video class="bird-video" autoplay loop muted webkit-playsinline>
-    <source src="imagens/birdd.mp4" type="video/mp4">
-</video>
 
-</main>
-
-<footer class="footer">
+<footer>
   <a href="mailto:pedromlps5@gmail.com"
      class="Mailto"
      title="send me an email if interested">
@@ -53,25 +47,6 @@
   </ul>
   
 </footer>
-
-  
-        <script>
-document.addEventListener("DOMContentLoaded", function() {
-  const videos = document.querySelectorAll("video");
-
-  videos.forEach(video => {
-    video.muted = true;
-    video.autoplay = true;
-    video.loop = true;
-    video.playsInline = true;
-
-    video.setAttribute("webkit-playsinline", "");
-
-    video.play().catch(() => {});
-  });
-});
-</script>
-
 </body> 
 
 
