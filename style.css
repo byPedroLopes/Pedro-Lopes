@@ -36,9 +36,7 @@ p, .explicação, .titulop {
   width: 100%;
   height: 100vh; 
   margin: 0;
-  /* Removi o overflow:hidden para não cortar o footer */
   display: flex;
-  flex-direction: column;
 }
 
 /* ================================================= */
@@ -101,7 +99,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   background-color: #29000c;
-  z-index: 1001;
+  z-index: 1000;
 }
 
 .footerli {
