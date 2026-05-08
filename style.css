@@ -51,6 +51,19 @@ p, .explicação, .titulop {
 }
 
 
+.index {
+  background-image: url("imagens/IMG_7975 (1) - Cópia - Cópia.PNG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh; 
+  margin: 0;
+  /* Removi o overflow:hidden para não cortar o footer */
+  display: flex;
+  flex-direction: column;
+}
+
 /* ================================================= */
 /* HEADER */
 /* ================================================= */
