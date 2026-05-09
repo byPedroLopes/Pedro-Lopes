@@ -192,7 +192,7 @@ padding-bottom: 0rem;
 .imgcaixa3 { grid-template-columns: repeat(3, 1fr); }
 .imgcaixa8 { grid-template-columns: repeat(3, 1fr); }
 .imgcaixa4 { grid-template-columns: repeat(4, 1fr); }
-.imgcaixa5 { grid-template-columns: repeat(5, 1fr); gap: 2rem;  }
+.imgcaixa5 { grid-template-columns: repeat(5, 1fr); gap: 1rem;  }
 
 /* ================================================= */
 /* VIDEO */
