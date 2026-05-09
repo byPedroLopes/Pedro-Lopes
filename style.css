@@ -319,7 +319,7 @@ h1 a { color: #000000;}
 
 @media (max-width: 900px) {
   .bio {
-    margin: 2rem;
+    margin: 1.5rem;
   }
 
   .about {
@@ -366,11 +366,6 @@ h1 a { color: #000000;}
 }
 
 
-
-  .about {
-    background-size: 20rem;
-    background-position-y: 0;
-  }
 
   .about {
   background-image: url(imagens/pedrol1.png);
