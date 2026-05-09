@@ -326,10 +326,7 @@ h1 a { color: #000000;}
     background-size: 20rem;
     background-position-y: 0;
   }
-  .logos img  {
-  width: 5rem;
-  height: auto;
-}
+ 
 
 }
 
@@ -364,14 +361,11 @@ h1 a { color: #000000;}
 }
 
  .logos img  {
-  width: 5rem;
+  width: 4rem;
   height: auto;
 }
 
- .logos img  {
-  width: 5rem;
-  height: auto;
-}
+
 
   .about {
     background-size: 20rem;
