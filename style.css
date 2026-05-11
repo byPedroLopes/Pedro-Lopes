@@ -16,6 +16,10 @@ p, .explicação, .titulop {
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
+.imgcaixa2 .titulop {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
 .titulop {
   font-weight: 400;
   font-size: small;
