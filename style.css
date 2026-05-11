@@ -21,12 +21,13 @@ p, .explicação, .titulop {
   font-weight: 400;
   font-size: small;
   padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
   color: #000000;
 }
 
 .explicação {
-  font-size: 0.6rem;
- line-height: 1.2;
+  font-size: 0.7rem;
+  line-height: 1.2;
   font-weight: 200;
 }
 
