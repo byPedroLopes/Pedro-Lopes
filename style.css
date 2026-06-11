@@ -57,7 +57,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
+  background-color: #29080c;
   z-index: 1001; /* Garante que fica no topo */
 }
 
