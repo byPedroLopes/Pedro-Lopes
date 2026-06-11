@@ -57,7 +57,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
+  background-color: #FAFAFA;
   z-index: 1001; /* Garante que fica no topo */
 }
 
@@ -102,7 +102,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
+  background-color: #FAFAFA;
   z-index: 1000;
 }
 
