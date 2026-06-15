@@ -21,6 +21,12 @@ p, .explicação, .titulop {
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
+.youtube {
+  color: #B0B0B0;
+  list-style: none;
+  padding-top:0.3;
+}
+
 
 .titulop {
   font-weight: 400;
