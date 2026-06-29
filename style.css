@@ -212,6 +212,15 @@ padding-bottom: 0rem;
 
 
 
+
+.logos img {
+  width: 4rem;
+  height: fit-content;
+  padding-left: 0.2rem; padding-right: 0.2rem;
+  margin: 0.2rem;
+
+}
+
 .fila {
   display: flex;
   flex-direction: column;
