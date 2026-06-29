@@ -104,7 +104,7 @@ header {
 /* ================================================= */
 
 footer {
-  position: fixed;
+
   bottom: 0;
   left: 0;
   width: 100%; /* FUNDAMENTAL para aparecer com position: fixed */
