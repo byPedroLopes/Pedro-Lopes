@@ -213,20 +213,6 @@ padding-bottom: 0rem;
 
 
 
-.logos {
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center;
-padding-bottom: 0rem;
-}
-
-.logos img {
-  width: 8rem;
-  height: fit-content;
-  padding-left: 0.2rem; padding-right: 0.2rem;
-  margin: 0.2rem;
-}
 .fila {
   display: flex;
   flex-direction: column;
