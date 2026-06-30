@@ -359,7 +359,7 @@ h1 a { color: #000000;}
 /* ================================================= */
 
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
 
 
 .imgcaixa21 { grid-template-columns: repeat(1, 1fr); }
@@ -389,10 +389,7 @@ h1 a { color: #000000;}
   display: block;
 }
 
- .logos img  {
-  width: 4rem;
-  height: auto;
-}
+
 
   .h1 {
     line-height: 1.0;
@@ -430,7 +427,7 @@ flex-direction: row;
 align-items: center;
 justify-content: center;
 padding-bottom: 0rem;
-  background-blend-mode: multiply;
+
 }
 
 .logos img {
