@@ -358,9 +358,35 @@ h1 a { color: #000000;}
 /* RESPONSIVE */
 /* ================================================= */
 
+/* ================================================= */
+/* LOGOS RESPONSIVE (FIXO NUMA LINHA) */
+/* ================================================= */
+
+.logos {
+  display: flex;
+  flex-wrap: nowrap; /* 🔥 nunca quebra linha */
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  overflow: hidden; /* 🔥 impede sair do ecrã */
+}
+
+.logos img {
+  width: 100%;
+  max-width: 120px; /* desktop */
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 1; /* 🔥 permite encolher */
+}
 
 
-@media (max-width: 1024px) (min-width: 600px) {
+/* ================================================= */
+/* TABLET */
+/* ================================================= */
+
+@media (max-width: 1024px) and (min-width: 600px) {
+
   .bio {
     margin: 1.5rem;
   }
@@ -371,131 +397,60 @@ h1 a { color: #000000;}
   }
 
   [class^="caixa"] {
-  width: 100%;
-  margin: 0;
-  padding: 0rem 5rem 2rem 5rem;
-}
+    width: 100%;
+    margin: 0;
+    padding: 0rem 5rem 2rem 5rem;
+  }
 
-[class^="imgcaixa"] {
-  display: grid;
-  width: 100%;
-  padding: 0rem;
-  gap: 1rem;
-}
+  .logos img {
+    max-width: 90px; /* 🔥 menor no tablet */
+  }
 
-[class^="imgcaixa"] img {
-  width: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.logos {
-  display: flex;
-  flex-wrap: wrap; /* 🔥 permite quebrar linha */
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-  max-width: 100%;
-}
-
-.logos img {
-  max-width: 100%; /* 🔥 controla quantos cabem por linha */
-  min-width: 2rem; /* 🔥 evita ficarem demasiado pequenos */
-  height: auto;
-  object-fit: contain;
 }
 
 
+/* ================================================= */
+/* TELEMÓVEL */
+/* ================================================= */
 
-/* GRID VARIAÇÕES */
-.imgcaixa21 { grid-template-columns: repeat(1, 1fr); }
-.imgcaixa2 { grid-template-columns: repeat(2, 1fr); }
-.imgcaixa3 { grid-template-columns: repeat(3, 1fr); }
-.imgcaixa8 { grid-template-columns: repeat(3, 1fr); }
-.imgcaixa4 { grid-template-columns: repeat(4, 1fr); }
-.imgcaixa5 { grid-template-columns: repeat(5, 1fr); gap: 1rem;  }
+@media (max-width: 600px) {
 
+  /* GRID */
+  .imgcaixa21,
+  .imgcaixa2,
+  .imgcaixa3,
+  .imgcaixa8 {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
+  .imgcaixa4,
+  .imgcaixa5 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
 
-.fila {
-  display: flex;
-  flex-direction: column;
-  text-align: left;  
-  margin: 2rem 2rem 0rem 2rem;
-  padding: 2.5rem;
-}
+  [class^="caixa"] {
+    width: 100%;
+    margin: 0;
+    padding: 0rem 1.5rem 0.5rem 1.5rem;
+  }
 
-.contentor2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2.5rem;
-  margin: 0.5rem auto;
-  max-width: 800px;
-  padding: 2.5rem;
-  background-color: #FAFAFA;
-}
-}
+  .logos img {
+    max-width: 65px; /* 🔥 pequeno no mobile */
+  }
 
-@media (min-width: 480px) (max-width: 600px) {
-
-
-.imgcaixa21 { grid-template-columns: repeat(1, 1fr); }
-.imgcaixa2 { grid-template-columns: repeat(1, 1fr); }
-.imgcaixa3 { grid-template-columns: repeat(1, 1fr); }
-.imgcaixa8 { grid-template-columns: repeat(1, 1fr); }
-.imgcaixa4 { grid-template-columns: repeat(2, 1fr); }
-.imgcaixa5 { grid-template-columns: repeat(2, 1fr); gap: 1.5rem;  }
-
-
-[class^="caixa"] {
-  width: 100%;
-  margin: 0;
-  padding: 0rem 1.5rem 0.5rem 1.5rem;
-}
-
-[class^="imgcaixa"] {
-  display: grid;
-  width: 100%;
-  padding: 0rem;
-  gap: 1rem;
-}
-
-[class^="imgcaixa"] img {
-  width: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.logos {
-  display: flex;
-  flex-wrap: wrap; /* 🔥 permite quebrar linha */
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-  max-width: 100%;
-}
-
-.logos img {
-  max-width: 50%; /* 🔥 controla quantos cabem por linha */
-  min-width: 2rem; /* 🔥 evita ficarem demasiado pequenos */
-  height: auto;
-  object-fit: contain;
-}
   .h1 {
     line-height: 1.0;
   }
 
-
   .about {
-  background-image: url(imagens/pedrol1.png);
-  background-size: 11rem;
-  background-position: right 0.2rem;
-  background-repeat: no-repeat;
-  margin: 1.0rem;
-  padding-right: 0.3rem;
-
-}
+    background-image: url(imagens/pedrol1.png);
+    background-size: 11rem;
+    background-position: right 0.2rem;
+    background-repeat: no-repeat;
+    margin: 1rem;
+    padding-right: 0.3rem;
+  }
 
   .contentor {
     margin: 1rem;
@@ -511,29 +466,18 @@ h1 a { color: #000000;}
     margin: 2rem;
   }
 
-
-
   .titulop {
-  font-weight: 400;
-  font-size: 0.8rem;
-  padding-top: 0.2rem;
-}
+    font-size: 0.8rem;
+  }
 
-.explicação {
-  font-size: 0.6rem;
-  font-weight: 200;
-  line-height: 1.2;
+  .explicação {
+    font-size: 0.6rem;
+    line-height: 1.2;
+  }
 
-}
   .fila {
-  display: flex;
-  flex-direction: column;
-  text-align: left;  
-  margin: 2rem 0.5rem 0rem 0.5rem;
-  padding: 4rem 1rem 1.5rem 1rem;
+    margin: 2rem 0.5rem 0rem 0.5rem;
+    padding: 4rem 1rem 1.5rem 1rem;
+  }
 
 }
-
-}
-
-
